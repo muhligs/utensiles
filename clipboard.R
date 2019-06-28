@@ -1,4 +1,5 @@
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+# This was essentially originally posted on stackoverflow https://stackoverflow.com/a/10960498/3980197
 write_clipboard = function(x, .rownames = F) {
     #decide how to write
     #windows is easy!
@@ -7,7 +8,7 @@ write_clipboard = function(x, .rownames = F) {
       write.table(x, "clipboard", sep = "\t", na = "", row.names = F)
     } else {
       #for non-windows, try xclip approach
-      #https://stackoverflow.com/a/10960498/3980197
+      #
       write.xclip = function(x) {
         #if xclip not installed
         if (!isTRUE(file.exists(Sys.which("xclip")[1L]))) {
