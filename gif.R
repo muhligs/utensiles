@@ -49,12 +49,9 @@ suffix <- get(env)[["suffix"]]
 file <- get(env)[["file"]]
 delay <- get(env)[["delay"]]
 nwd <- get(env)[["nwd"]]
-print(nwd)
 tempdir <- paste0("temp.gif.dir_",suffix)
 owd <- getwd()
-print(owd)
 setwd(paste0(nwd,"/",tempdir))
-print(getwd())
 lf <- list.files(pattern=".png")
 if(length(lf)!=0){
 system(paste0("convert -delay ",delay," *.png -loop 0 ../",file,".gif"))
