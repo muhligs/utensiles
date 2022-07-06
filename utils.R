@@ -11,6 +11,7 @@ source("./find.R",local = utensiles)
 source("./clipboard.R",local = utensiles)
 source("./gif.R",local = utensiles)
 source("./qq.p.R",local = utensiles)
+source("./currentopen.R",local = utensiles)
 attach(utensiles)
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
